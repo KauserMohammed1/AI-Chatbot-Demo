@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test AI Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Test AI Chatbot Page</h1>
+    <p>Interact with the chatbot below to see how it works.</p>
+
+    <!-- Chatbot Embed Area -->
+    <div id="chatbot-container"></div>
+
+    <script>
+    (function(d, m){
+        var chatbotSettings = {
+            "appId": "YOUR_APP_ID",
+            "popupWidget": true,
+            "automaticChatOpenOnNavigation": true
+        };
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://your-chatbot-script-url.com";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window[m] = chatbotSettings;
+    })(document, "chatbotSettings");
+</script>
+
+
+</body>
+</html>
